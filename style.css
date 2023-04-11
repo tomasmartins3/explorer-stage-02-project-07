@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #2F2E41;
+  --secondary-color: #00BFA6;
+  --text-color: #C2C2C2;
+  --white: #FFFFFF;
+  --font-family: 'Open sans', sans-serif;
+  --font-family-b: 'JetBrains Mono', sans-serif;
+  --font-size-s: 1rem;
+  --font-size-b: 2.25rem;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-s);
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.highlight {
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--white);
+  font-family: var(--font-family-b);
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+}
+
+header nav {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul.navbar {
+  padding-left: 0;
+
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+main .section-hero{
+  margin-top: 140px;
+  margin-bottom: 180px;
+}
+
+main .text-container {
+  width: 605px;
+}
+
+main .text-container h1 {
+  margin: 0;
+  margin-bottom: 3.75rem;
+
+  color: var(--white);
+  font-family: var(--font-family-b);
+  font-size: var(--font-size-b);
+}
+main .text-container p {
+ margin: 0;
+ margin-bottom: 1rem;
+ line-height: 1.75rem;
+}
+
+footer .footer-text {
+  width: 568px;
+}
+footer .footer-text hr {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid var(--secondary-color);
+}
+footer .footer-text p {
+  color: var(--white);
+}
+
+.padlock-container {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
